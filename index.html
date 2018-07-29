@@ -6,6 +6,23 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<p>Калькулятор</p>
+	<p class="name">Калькулятор</p>
+	<form class="calc">
+		<div class="row">
+			<div class="numbers">
+				<input type="text" class="number-1" id="input1" value="" placeholder="1-ое число">
+				<input type="text" class="number-2" id="input2" value="" placeholder="2-ое число">
+			</div>
+			<div class="calc-operations">
+				<button type="button" class="plus">+</button>
+				<button type="button" class="minus">-</button>
+				<button type="button" class="multiply">*</button>
+				<button type="button" class="divide">/</button>
+			</div>
+			<p class="result">Результат операции:</p>
+			<div id="result-block"></div>
+		</div>
+	</form>
+	<script src="app.js"></script>
 </body>
 </html>
